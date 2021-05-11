@@ -18,9 +18,9 @@
 * クラスの宣言
 ```JAVA:クラスの宣言
 public class クラス名 {
-　　public static void main(String[] args) {
+    public static void main(String[] args) {
     // System.out 標準出力ストリーム  println 表示して改行
     System.out.println("クラスの宣言");
-　　}
+    }
 }
 ```
