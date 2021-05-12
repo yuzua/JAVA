@@ -16,7 +16,7 @@
 * $java クラス名(クラスファイル名) → 実行(拡張子の.classは省略する) ※JAVA11からjavaコマンドだけでコンパイル・実行ができるようになった(単一ファイルで構成されたソースコードプログラムでありクラスがpublicでなければならない)
 # 基本構成
 * クラスの宣言
-```JAVA:クラスの宣言
+```Java:クラスの宣言
 public class クラス名 {
     public static void main(String[] args) {
     // System.out 標準出力ストリーム  println 表示して改行
@@ -24,3 +24,18 @@ public class クラス名 {
     }
 }
 ```
+# 変数
+* 変数の宣言 代入と初期化は異なる概念
+```Java:変数の宣言
+public class クラス名 {
+    public static void main(String[] args) {
+        // 型 変数名
+        int x;
+        // 代入
+        x = 50;
+        // 初期化
+        int y = 40
+    }
+}
+```
+
