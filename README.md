@@ -38,4 +38,48 @@ public class クラス名 {
     }
 }
 ```
-
+* final変数 一旦入れた値を変更できないようにする(初期化するのが原則)
+```Java:final変数
+public class クラス名 {
+    public static void main(String[] args) {
+        // 保守性,可読性の向上
+        final double PI = 3.1416;
+    }
+}
+```
+* constant変数 基本型とString型のfinal変数に限り,constant変数と呼ばれる
+# 入力受け付け
+* キーボードからの入力を受け付ける
+```Java:入力を受け付ける
+import java.util.Scanner;
+class ArithInt {
+    public static void main(String[] args) {
+        Scanner stdIn = new Scanner(System.in);
+        System.out.println("xの値は:");
+        int x = stdIn.nextInt();
+        System.out.println("x = " + x)
+    }
+}
+```
+* 種類
+```Java:入植受付
+// nextInt() int型の整数値を読み込む
+// next() String型の文字列を読み込む
+// その他多数
+```
+# データ型
+* 整数型(byte int) 1バイト整数(-128~127) 整数 (基本型)
+* 浮動小数点型(flout double) (基本型)
+* 文字列型(String)
+# 乱数の生成
+* 乱数 rand.nextInt(n) 0~n-1までの間で作成
+```Java:乱数の生成
+import java.util.Random;
+class LuckyNo {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int Lucky = rand.nextInt(10);
+        System.out.println("今日のラッキナンバーは"+ Lucky + "です")
+    }
+}
+```
