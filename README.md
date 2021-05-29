@@ -84,7 +84,7 @@ class LuckyNo {
 }
 ```
 # IF文
-* if-then文 通常のIF文
+* if-then文 通常のIF文 ※if,else後の文は1つのみ
 ```Java:if-then文
 // if (条件)
 if (n>0)
