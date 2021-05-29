@@ -84,14 +84,15 @@ class LuckyNo {
 }
 ```
 # IF文
-* if-then文 通常のIF文 ※if,else後の文は1つのみ
+* if-then文 通常のIF文 特殊なものはif.javaを参照 ※if,else後の文は1つのみ
 ```Java:if-then文
-// if (条件)
+// if (式) 文
 if (n>0)
     System.out.println("正の値です");
 ```
 * if-then-else文
 ```Java:if-then-else文
+// if (式) 文 else 文
 if (n>0)
     System.out.println("正の値です");
 else
@@ -107,6 +108,8 @@ else
     else
         System.out.println("負の値です");
 ```
+# ブロック
+* 
 
 # 演算子
 * 条件演算子 x ? y:z xがtureであればyを評価した値を,falseであればzを評価した値を生成
