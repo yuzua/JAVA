@@ -122,3 +122,14 @@ if (a<b) {
 
 # 演算子
 * 条件演算子 x ? y:z xがtureであればyを評価した値を,falseであればzを評価した値を生成
+
+# switch文
+* break文　break文を囲んでいるswitch文の実行を中断,終了させる ※入力値評価+ラベル使用のbreak文はswtch.javaを参照
+```Java:swtch-break文
+swtch (sum / 10) {
+    case 0 : System.out.println("割り切れている"); break;
+    case 1 : System.out.println("1余る"); break;
+    case 2, 3 : System.out.println("割り切れない"); break;
+    default: System.out.println("当てはまらない"); break;
+}
+```
