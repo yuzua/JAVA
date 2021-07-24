@@ -133,3 +133,9 @@ swtch (sum / 10) {
     default: System.out.println("当てはまらない"); break;
 }
 ```
+# キャスト演算子
+* キャスト=型変換
+```Java:キャスト演算子
+// (型) 式
+double ave = (double)(x + y) / 2
+```
