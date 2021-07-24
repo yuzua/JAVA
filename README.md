@@ -25,7 +25,7 @@ public class クラス名 {
 }
 ```
 # 変数
-* 変数の宣言 代入と初期化は異なる概念
+* 変数の宣言 代入と初期化は異なる概念 ※var 変数名 = 値 で変数の方が自動的に値に対応した型になる
 ```Java:変数の宣言
 public class クラス名 {
     public static void main(String[] args) {
@@ -35,6 +35,7 @@ public class クラス名 {
         x = 50;
         // 初期化
         int y = 40
+        var z = 30;
     }
 }
 ```
