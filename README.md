@@ -152,4 +152,4 @@ public class クラス名 {
     }
 }
 ```
-* その他配列関係の細かな詳細は array.javaを参照
+* 拡張for文などその他配列関係の細かな詳細は array.javaを参照
