@@ -149,10 +149,7 @@ public class クラス名 {
     a = new int[5];
     // 一括指定も可能
     int[] b = new int[5]
-    // インデックスは0から
-    a[0] = 10;
-    // 要素数の確認
-    System.out.println(a.length);
     }
 }
 ```
+* その他配列関係の細かな詳細は array.javaを参照
