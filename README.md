@@ -140,3 +140,19 @@ swtch (sum / 10) {
 // (型) 式
 double ave = (double)(x + y) / 2
 ```
+# 配列
+* 配列は、同一型の変数である構成要素が連続して直線上に並んだ構造です ※個々の構成要素の型である構成要素型は任意
+```Java:配列
+public class クラス名 {
+    public static void main(String[] args) {
+    int[] a;
+    a = new int[5];
+    // 一括指定も可能
+    int[] b = new int[5]
+    // インデックスは0から
+    a[0] = 10;
+    // 要素数の確認
+    System.out.println(a.length);
+    }
+}
+```
