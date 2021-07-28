@@ -159,7 +159,7 @@ public class クラス名 {
 // メソッドの宣言
 class MaxHwMethod {
     // メソッド頭部 static 返却型 メソッド名(仮引数) ※仮引数は、与えられた実引数の値によって初期化
-    static int max(int a, int b, int c) {
+    static int max(int a, int b, int c) { // 仮引数は値渡しのため値を変更しても実引数に影響なし
         // メソッド本体 処理内容 ※メソッド名と同じ名前の変数の宣言が可能
         int max = a;
         if (b > max) max = b;
@@ -172,3 +172,4 @@ public static void main(String[] args) {
     int maxWeight = max(20, 50, 55);
 }
 ```
+* voidメソッドなどその他メソッド関係は method.java を参照
