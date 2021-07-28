@@ -153,3 +153,22 @@ public class クラス名 {
 }
 ```
 * 拡張for文などその他配列関係の細かな詳細は array.javaを参照
+# メソッド
+* ひとまとまりの手続きを、１つの部品としてまとめる ※処理はmainメソッドから行われ、MaxHwMethodが呼び出されたらmainメソッドを一時中断し、MaxHwMethodを実行
+```Java:メソッド
+// メソッドの宣言
+class MaxHwMethod {
+    // メソッド頭部 static 返却型 メソッド名(仮引数) ※仮引数は、与えられた実引数の値によって初期化
+    static int max(int a, int b, int c) {
+        // メソッド本体 処理内容 ※メソッド名と同じ名前の変数の宣言が可能
+        int max = a;
+        if (b > max) max = b;
+        if (c > max) max = c;
+        return max; // メソッド内のreturn文は可能な限り1個又は少数に抑える
+    }
+}
+public static void main(String[] args) {
+    int maxHeight = max(11, 12, 13);
+    int maxWeight = max(20, 50, 55);
+}
+```
