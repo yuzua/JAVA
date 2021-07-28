@@ -49,6 +49,5 @@ class ArithInt {
                 System.out.println();
             }
         }
-        
     }   
 }
