@@ -177,3 +177,45 @@ public static void main(String[] args) {
 }
 ```
 * voidメソッドなどその他メソッド関係は method.java を参照
+# クラス
+* メソッドと処理対象のデータとの組み合わせ
+* クラスはフィールド,コンストラクタ,メソッドからできている
+```Java:クラス
+class Account {
+    // フィールド ※クラス内の全てのフィールドは原則private(非公開)にしておく
+    private String name;
+    private String no;
+    private long balance;
+    // コンストラクタ ※クラスを宣言する時は,必ずコンストラクタを用意し,インスタンスを初期化する
+    Account(String name, String no, long balance) {
+        // this.フィールド変数名 = 仮引数名にすることで同じ変数名を使う事ができる
+        this.name = name;
+        this.no = no;
+        this.balance = balance;
+    }
+    // メソッド ※staticを付けずに宣言されたインスタンスメソッドは,ここのインスタンスごとに作られ,そのインスタンスに所属する
+    String getName() {
+        return name;
+    }
+    String getNo() {
+        return no;
+    }
+    String getBalance() {
+        return balance;
+    }
+    void deposit(long k) {
+        balance += k;
+    }
+    void withdraw(long k) {
+        balance -= k;
+    }
+}
+class AccountTest {
+    public static void main(String[] args) {
+        Account niigata = new Account("新潟太郎", "123456", 1000);
+        Account tokyo = new Account("東京太郎", "987654", 300);
+        niiigata.withdraw(200);
+        tokyo.deposit(800);
+    }
+}
+```
