@@ -116,3 +116,15 @@ public class Account {
         return id;
     }
 }
+// クラスメソッド・・・全インスタンスで共有するメソッド
+public class DayMethod {
+    private int year=1;
+    private int month=1;
+    private int date=1;
+    // クラスメソッド
+    public static boolean isLeap(int y){
+        return y%4 == 0%100!=0 || y%400==0;
+    }
+    // インスタンスメソッドからクラスメソッドの呼び出し
+    public boolean isLeap() {return isLeap(year);}
+}
