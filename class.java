@@ -128,3 +128,8 @@ public class DayMethod {
     // インスタンスメソッドからクラスメソッドの呼び出し
     public boolean isLeap() {return isLeap(year);}
 }
+// クラスの利用者に提供すべき場合は,publicかつfinalなクラス変数とする
+public final class Math{
+    public static final double E = 2.7182;
+    public static final double PI = 3.1415;
+}
