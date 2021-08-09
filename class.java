@@ -121,7 +121,7 @@ public class DayMethod {
     private int year=1;
     private int month=1;
     private int date=1;
-    // クラスメソッド
+    // クラスメソッド(static有)
     public static boolean isLeap(int y){
         return y%4 == 0%100!=0 || y%400==0;
     }
