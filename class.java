@@ -97,3 +97,22 @@ class DayTester {
             System.out.println("a[" + i + "] = " + a[i]);
     }
 }
+
+// クラス変数・・・ユーザーIDなど個々のインスタンスではなく、全インスタンスで共有する場合,staticをつける
+public class Account {
+    private static int counter = 0;
+    private String name;
+    private String no;
+    private long balance;
+    private int id;
+
+    public Account(String name, String no, long balance) {
+        this.name = name;
+        this.no = no;
+        this.balance = balance;
+        id = ++counter;
+    }
+    public getId() {
+        return id;
+    }
+}
