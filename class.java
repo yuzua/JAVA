@@ -116,7 +116,7 @@ public class Account {
         return id;
     }
 }
-// クラスメソッド・・・全インスタンスで共有するメソッド
+// クラスメソッド・・・全インスタンスで共有するメソッド ※クラスメソッドは、クラス変数とクラスメソッドしか呼び出せない
 public class DayMethod {
     private int year=1;
     private int month=1;
