@@ -133,3 +133,63 @@ public final class Math{
     public static final double E = 2.7182;
     public static final double PI = 3.1415;
 }
+// クラス初期化子・・・1番最初にクラスが呼び出された時のみ実行
+class DateId {
+    private static int counter;
+    private int id;
+    // クラス初期化子
+    static {
+        GregorianCalender today = new GregorianCalender();
+        int y = today.get(YEAR);
+        int m = today.get(MONTH);
+        int d = today.get(DATE);
+        System.out.println("今日は%04d年%02d月%02d日です。 \n", y, m, d);
+        counter = y*1000000 + m*10000 + d*100;
+    }
+    public DateId() {
+        id = ++counter;
+    }
+    public int getId() {
+        return id;
+    }
+}
+public class DateIdTester {
+    public static void main(STaring[] args) {
+        DateId a = new DateId();
+        DateId b = new DateId();
+        DateId c = new DateId();
+
+        System.out.println("aの識別番号は:" + a.getId());
+        System.out.println("bの識別番号は:" + b.getId());
+        System.out.println("cの識別番号は:" + c.getId());
+    }
+}
+// インスタンス初期化子
+class XY {
+    private static int counter = 0;
+    private int id;
+
+    private int x=0;
+    private int y=0;
+    // インスタンス初期化子
+    {
+        id = ++ counter
+    }
+    public XY() {}
+    public XY(int x) {this.x = x;}
+    public XY(int x, int y) {this(x); this.y = y;}
+    public String toString() {
+        return "No." + id + "・・・ (" + x + "," + y + ")";
+    }
+}
+public class XYTester {
+    public static void main(String[] args) {
+        XY a = new XY();
+        XY b = new XY(10);
+        XY c = new XY(20, 30);
+
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
+    }
+}
