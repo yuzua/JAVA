@@ -245,7 +245,7 @@ import java.util.*; // util以下でプログラム内で使用されてるも�
 // オンデマンド静的インポート宣言 = import static パッケージ名.型名.*;
 import static java.lang.Math.PI;
 ```
-* パッケージの宣言
+* パッケージの宣言・・・パッケージ事にフォルダを作り、まとめる
 ```Java:パッケージの宣言・・・インポート宣言やクラス宣言よりも前に置かなくてはならない
 // pakege パッケージ名;
 pakege sample;
