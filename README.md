@@ -250,3 +250,21 @@ import static java.lang.Math.PI;
 // pakege パッケージ名;
 pakege sample;
 ```
+# 継承
+* 親クラスを継承することで、子クラスでもその資産(フィールド,メソッド)を使用できる。
+```Java:継承
+class Base {
+    int a;
+    int b;
+    int getA() {}
+    void setA(int a) {}
+    int getB() {}
+    void setB(int b) {}
+}
+// 継承・・・ class クラス名 extends 親クラス名
+class Derived extends Base {
+    int c;
+    int getC() {}
+    void setC(int c) {}
+}
+```
