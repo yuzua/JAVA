@@ -269,3 +269,32 @@ class Derived extends Base {
     void setC(int c) {}
 }
 ```
+* オーバーライド(上書き)・・・親クラスと同じ名前でメソッドを定義した場合、上書きが可能
+```Java:オーバーライド
+class Pet {
+    private String name;
+    private String masterName;
+
+    public Pet(String name, String masterName) {
+        this.name = name;
+        this.masterName = masterName;
+    }
+    public getName() {return name;}
+    public getMasterName() {return masterName;}
+    public void introduce() {
+        System.out.println("Petは" + name);
+    }
+}
+class RobotPet extends Pet {
+    public RobotPet(String name, String masterName) {
+        super(name, masterName);
+    }
+    // オーバーライド
+    @Override public void introduce() {
+        System.out.println("飼い主は" + masterName);
+    }
+    public void work(int sw) {
+        ~;
+    }
+}
+```
