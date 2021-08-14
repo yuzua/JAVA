@@ -299,3 +299,4 @@ class RobotPet extends Pet {
     }
 }
 ```
+* 抽象クラスなどはextends.javaを参照
