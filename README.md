@@ -300,3 +300,17 @@ class RobotPet extends Pet {
 }
 ```
 * 抽象クラスなどはextends.javaを参照
+# インタフェース
+* インタフェース・・・メソッドの設計図
+```Java:インタフェース
+// インタフェースの宣言
+interface Player {
+    void play();
+    void stop();
+}
+// インタフェースの実装
+class VideoPlayer implements Player {
+    public void play() {}
+    public void stop() {}
+}
+```
