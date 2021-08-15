@@ -314,3 +314,40 @@ class VideoPlayer implements Player {
     public void stop() {}
 }
 ```
+# 例外処理
+* try文・・・try文は、tryブロック、catch節、finally節の3つのパーツで構成される。
+```Java:例外処理
+ class ExceptionSample {
+     public static void main(String[] args) {
+         Scanner stdIn = new Scanner(System.in);
+         System.out.println("xとyを加減乗除します。");
+         while (true) {
+             // tryブロック
+             try {
+                 System.out.println("xの値："); int x = stdIn.nextInt();
+                 System.out.println("yの値："); int y = stdIn.nextInt();
+
+                 System.out.println("x+y=" + (x+y));
+                 System.out.println("x-y=" + (x-y));
+                 System.out.println("x*y=" + (x*y));
+                 System.out.println("x/y=" + (x/y));
+            // catch節 catch (エラー文)
+             } catch (InputMismatchException e) {
+                 System.out.println("入力エラー発生" + e);
+                 String s = stdIn.next();
+                 System.out.println(e + "は無視しました。");
+             } catch (ArithmeticException e) {
+                 System.out.println("算術エラー発生" + e);
+                 System.out.println("エラーが出ないようにお願いします");
+            // finally節・・・tryブロックの例外発生に関わらず、最後に必ず実行される
+             } finally {
+                 System.out.println("_____________________");
+                 System.out.println("もう一度? (1・・・Yes/2・・・No)");
+                 int retry = stdIn.nextInt();
+                 if (retry == 0) break;
+                 System.out.println("_____________________");
+             }
+         }
+     }
+ }
+```
